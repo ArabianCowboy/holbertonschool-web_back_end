@@ -9,7 +9,13 @@ class StudentsController {
     readDatabase(database)
       .then((students) => {
         let message = "This is the list of our students\n";
-        for (const field in students) {
+        
+        // Sort fields alphabetically (case insensitive)
+        const sortedFields = Object.keys(students).sort((a, b) => 
+          a.toLowerCase().localeCompare(b.toLowerCase())
+        );
+        
+        for (const field of sortedFields) {
           message += `Number of students in ${field}: ${
             students[field].length
           }. List: ${students[field].join(", ")}\n`;
