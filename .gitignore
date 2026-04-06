@@ -1,0 +1,73 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build / output
+dist/
+build/
+coverage/
+.nyc_output/
+.cache/
+
+# Environment files
+.env
+.env.*.local
+
+# Logs
+logs/
+*.log
+pids/
+*.pid
+
+# Dependency directories
+jspm_packages/
+
+# Runtime data
+*.pid
+*.seed
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+venv/
+env/
+ENV/
+*.egg-info/
+
+# Misc
+*.sqlite3
+*.sqlite
+.DS_Store
+
+# Yarn
+.yarn/*
+.pnp.*
+
+# Mac
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.swp
+*~
+
+# Ignore local node binaries
+node_modules/**/node_modules/
+
+# Ignore lockfiles? (usually keep lockfiles in repo)
+# package-lock.json
+# yarn.lock
